@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Create a number guessing game.
+  </title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="top">
+   <h1>
+    HTML CSS JavaScript Practical Programs
+   </h1>
+   <div>
+    Programs • Create a number guessing game.
+   </div>
+  </header>
+  <nav class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../html/index.html">HTML</a>
+    <a class="btn" href="../css/index.html">CSS</a>
+    <a class="btn" href="../javascript/index.html">JavaScript</a>
+</nav>
+  <main class="wrap">
+   <a class="btn" href="index.html">
+    ← Back to Programs
+   </a>
+   <div class="card">
+    <h2>
+     Create a number guessing game.
+    </h2>
+    <p>
+     Working JavaScript practical program. Try the controls below.
+    </p>
+   </div>
+   <div class="card">
+    <input id="g" max="10" min="1" type="number" value="5"/>
+    <button onclick="guess()">
+     Guess
+    </button>
+    <div class="result" id="out">
+    </div>
+    <script>
+     let secret=7;function guess(){let x=+g.value;out.textContent=x===secret?'Correct!':x<secret?'Too low':'Too high'}
+    </script>
+   </div>
+  
+   <div class="program-buttons">
+    <a class="btn" href="js-02-07.html">← Back</a>
+    <a class="btn" href="js-02-09.html">Next →</a>
+   </div>
+  </main>
+  <footer class="footer">
+   Practical Programs Website
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Display API data dynamically on a webpage.
+  </title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="top">
+   <h1>
+    HTML CSS JavaScript Practical Programs
+   </h1>
+   <div>
+    Programs • Display API data dynamically on a webpage.
+   </div>
+  </header>
+  <nav class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../html/index.html">HTML</a>
+    <a class="btn" href="../css/index.html">CSS</a>
+    <a class="btn" href="../javascript/index.html">JavaScript</a>
+</nav>
+  <main class="wrap">
+   <a class="btn" href="index.html">
+    ← Back to Programs
+   </a>
+   <div class="card">
+    <h2>
+     Display API data dynamically on a webpage.
+    </h2>
+    <p>
+     Working JavaScript practical program. Try the controls below.
+    </p>
+   </div>
+   <div class="card">
+    <button onclick="load()">
+     Fetch Data
+    </button>
+    <pre class="result" id="out">Press the button.</pre>
+    <script>
+     async function load(){out.textContent='Loading...';try{let r=await fetch('https://jsonplaceholder.typicode.com/todos/1');let d=await r.json();out.textContent=JSON.stringify(d,null,2)}catch(e){out.textContent='API could not be reached.'}}
+    </script>
+   </div>
+  
+   <div class="program-buttons">
+    <a class="btn" href="js-03-06.html">← Back</a>
+    <a class="btn" href="js-03-08.html">Next →</a>
+   </div>
+  </main>
+  <footer class="footer">
+   Practical Programs Website
+  </footer>
+ </body>
+</html>

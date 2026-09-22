@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sk Abdul Azeez | Interactive Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif;background:#f6f3ff;color:#222;line-height:1.6}.portfolio-nav{position:sticky;top:0;background:#5b21b6;padding:15px;text-align:center;z-index:10}.portfolio-nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}.hero{background:linear-gradient(135deg,#7c3aed,#5b21b6);color:white;text-align:center;padding:65px 20px}.hero h1{font-size:42px}.hero h2{margin:8px 0 15px;font-weight:normal}.hero p{max-width:750px;margin:auto}.btn{display:inline-block;margin-top:22px;padding:11px 20px;background:#f59e0b;color:#111;border:0;border-radius:8px;text-decoration:none;font-weight:bold;cursor:pointer}.section{max-width:950px;margin:35px auto;padding:0 20px}.section h2{color:#5b21b6;margin-bottom:15px}.card{background:white;padding:25px;border-radius:14px;margin-bottom:18px;box-shadow:0 5px 18px rgba(0,0,0,.08)}.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{background:#ede9fe;color:#5b21b6;padding:8px 13px;border-radius:20px;font-weight:bold}.project h3{color:#7c3aed}.project .tech{font-size:14px;color:#555}.contact{text-align:center}.contact button{margin:8px}.hidden{display:none}.footer{text-align:center;background:#2e1065;color:white;padding:20px;margin-top:40px}@media(max-width:600px){.hero h1{font-size:32px}.portfolio-nav a{display:inline-block;margin:5px;font-size:14px}}
+</style>
+</head>
+<body>
+<nav class="portfolio-nav">
+<a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+<h1>Sk Abdul Azeez</h1>
+<h2>B.Tech Computer Science & Engineering Student</h2>
+<p>I am interested in programming, Data Structures & Algorithms, Python, web development and problem solving.</p>
+<button class="btn" onclick="showMessage()">Say Hello</button>
+<p id="message"></p>
+</section>
+
+<section class="section" id="about"><div class="card"><h2>About Me</h2><p>Hello! My name is Sk Abdul Azeez. I am a B.Tech Computer Science and Engineering student at Sai University. I am building my technical skills through programming practice and practical projects.</p><p>I work with C, Python, HTML and CSS, and I have studied Data Structures and Algorithms in C. I enjoy learning new technologies and improving my problem-solving skills.</p></div></section>
+
+<section class="section" id="education"><h2>Education</h2><div class="card"><h3>B.Tech – Computer Science and Engineering</h3><p><strong>Institution:</strong> Sai University</p><p><strong>Status:</strong> Currently Pursuing</p></div></section>
+
+<section class="section" id="skills"><h2>Technical Skills</h2><div class="card"><div class="skills"><span class="skill">C Programming</span><span class="skill">Python</span><span class="skill">Data Structures & Algorithms in C</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">Web Development</span><span class="skill">Problem Solving</span></div></div></section>
+
+<section class="section" id="projects"><h2>Projects</h2>
+<div class="card project"><h3>Student Attendance Management System</h3><p>A student project focused on organizing student information and attendance records while reducing manual record keeping.</p><p class="tech"><strong>Technologies:</strong> C Programming, Data Structures & Algorithms</p></div>
+<div class="card project"><h3>Personal Portfolio Website</h3><p>A personal website created to showcase education, technical skills, projects and professional information.</p><p class="tech"><strong>Technologies:</strong> HTML, CSS, JavaScript, GitHub Pages</p></div>
+<div class="card project"><h3>Python Learning Projects</h3><p>A collection of practice programs and problem-solving exercises developed while learning Python and strengthening programming fundamentals.</p><p class="tech"><strong>Technology:</strong> Python</p></div>
+</section>
+
+<section class="section" id="contact"><div class="card contact"><h2>Contact</h2><p><strong>Email:</strong> skabdulazeez600@gmail.com</p><button class="btn" onclick="copyEmail()">Copy Email</button><button class="btn" onclick="toggleContact()">Show/Hide Contact</button><p id="copyStatus"></p><div id="extraContact" class="hidden"><p>Thank you for visiting my portfolio!</p></div></div></section>
+
+<footer class="footer">© 2026 Sk Abdul Azeez | Interactive Portfolio</footer>
+<script>
+function showMessage(){document.getElementById('message').textContent='Hello! Thanks for visiting my portfolio 👋';}
+function copyEmail(){navigator.clipboard.writeText('skabdulazeez600@gmail.com').then(()=>document.getElementById('copyStatus').textContent='Email copied!').catch(()=>document.getElementById('copyStatus').textContent='Email: skabdulazeez600@gmail.com');}
+function toggleContact(){document.getElementById('extraContact').classList.toggle('hidden');}
+</script>
+</body>
+</html>

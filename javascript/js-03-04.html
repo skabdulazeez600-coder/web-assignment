@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Demonstrate inheritance in JavaScript.
+  </title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="top">
+   <h1>
+    HTML CSS JavaScript Practical Programs
+   </h1>
+   <div>
+    Programs • Demonstrate inheritance in JavaScript.
+   </div>
+  </header>
+  <nav class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../html/index.html">HTML</a>
+    <a class="btn" href="../css/index.html">CSS</a>
+    <a class="btn" href="../javascript/index.html">JavaScript</a>
+</nav>
+  <main class="wrap">
+   <a class="btn" href="index.html">
+    ← Back to Programs
+   </a>
+   <div class="card">
+    <h2>
+     Demonstrate inheritance in JavaScript.
+    </h2>
+    <p>
+     Working JavaScript practical program. Try the controls below.
+    </p>
+   </div>
+   <div class="card">
+    <button onclick="run()">
+     Run
+    </button>
+    <div class="result" id="out">
+    </div>
+    <script>
+     class Animal{sound(){return 'Animal sound'}}class Dog extends Animal{sound(){return 'Dog barks'}}function run(){out.textContent=new Dog().sound()}
+    </script>
+   </div>
+  
+   <div class="program-buttons">
+    <a class="btn" href="js-03-03.html">← Back</a>
+    <a class="btn" href="js-03-05.html">Next →</a>
+   </div>
+  </main>
+  <footer class="footer">
+   Practical Programs Website
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Create a countdown timer using JavaScript.
+  </title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="top">
+   <h1>
+    HTML CSS JavaScript Practical Programs
+   </h1>
+   <div>
+    Programs • Create a countdown timer using JavaScript.
+   </div>
+  </header>
+  <nav class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../html/index.html">HTML</a>
+    <a class="btn" href="../css/index.html">CSS</a>
+    <a class="btn" href="../javascript/index.html">JavaScript</a>
+</nav>
+  <main class="wrap">
+   <a class="btn" href="index.html">
+    ← Back to Programs
+   </a>
+   <div class="card">
+    <h2>
+     Create a countdown timer using JavaScript.
+    </h2>
+    <p>
+     Working JavaScript practical program. Try the controls below.
+    </p>
+   </div>
+   <div class="card">
+    <input id="n" type="number" value="10"/>
+    <button onclick="start()">
+     Start
+    </button>
+    <h2 id="out">
+     Ready
+    </h2>
+    <script>
+     let timer;function start(){clearInterval(timer);let x=+n.value;out.textContent=x;timer=setInterval(()=>{x--;out.textContent=x;if(x<=0){clearInterval(timer);out.textContent='Time up!'}},1000)}
+    </script>
+   </div>
+  
+   <div class="program-buttons">
+    <a class="btn" href="js-02-14.html">← Back</a>
+    <a class="btn" href="js-02-16.html">Next →</a>
+   </div>
+  </main>
+  <footer class="footer">
+   Practical Programs Website
+  </footer>
+ </body>
+</html>

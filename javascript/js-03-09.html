@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Create a responsive login form with JavaScript validation.
+  </title>
+  <link href="../assets/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="top">
+   <h1>
+    HTML CSS JavaScript Practical Programs
+   </h1>
+   <div>
+    Programs • Create a responsive login form with JavaScript validation.
+   </div>
+  </header>
+  <nav class="nav">
+    <a class="btn" href="../index.html">Home</a>
+    <a class="btn" href="../html/index.html">HTML</a>
+    <a class="btn" href="../css/index.html">CSS</a>
+    <a class="btn" href="../javascript/index.html">JavaScript</a>
+</nav>
+  <main class="wrap">
+   <a class="btn" href="index.html">
+    ← Back to Programs
+   </a>
+   <div class="card">
+    <h2>
+     Create a responsive login form with JavaScript validation.
+    </h2>
+    <p>
+     Working JavaScript practical program. Try the controls below.
+    </p>
+   </div>
+   <div class="card">
+    <form onsubmit="event.preventDefault();out.textContent=user.value&amp;&amp;pass.value.length&gt;=4?'Login valid':'Enter username and 4+ character password'">
+     <input id="user" placeholder="Username"/>
+     <input id="pass" placeholder="Password" type="password"/>
+     <button>
+      Login
+     </button>
+    </form>
+    <div class="result" id="out">
+    </div>
+   </div>
+  
+   <div class="program-buttons">
+    <a class="btn" href="js-03-08.html">← Back</a>
+    <a class="btn" href="js-03-10.html">Next →</a>
+   </div>
+  </main>
+  <footer class="footer">
+   Practical Programs Website
+  </footer>
+ </body>
+</html>
